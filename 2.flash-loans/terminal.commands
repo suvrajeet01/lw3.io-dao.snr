@@ -142,3 +142,69 @@ blockNumber to a fixed value to increase performance with a local cache.
   10 passing (3s)
 
 gitpod /workspace/lw3.io-dao.snr/2.flash-loans (trunk) $ clear
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.snr/2.flash-loans (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr/2.flash-loans (trunk) $ cd ..
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.flash-loans/
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   2.flash-loans/.gitignore
+        new file:   2.flash-loans/README.md
+        new file:   2.flash-loans/config.js
+        new file:   2.flash-loans/contracts/FlashLoanExample.sol
+        new file:   2.flash-loans/contracts/Lock.sol
+        new file:   2.flash-loans/hardhat.config.js
+        new file:   2.flash-loans/package-lock.json
+        new file:   2.flash-loans/package.json
+        new file:   2.flash-loans/scripts/deploy.js
+        new file:   2.flash-loans/terminal.commands
+        new file:   2.flash-loans/test/FlashLoanExample.js
+        new file:   2.flash-loans/test/Lock.js
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "flash-loans"
+[trunk 5cafb4e] flash-loans
+ 12 files changed, 9719 insertions(+)
+ create mode 100644 2.flash-loans/.gitignore
+ create mode 100644 2.flash-loans/README.md
+ create mode 100644 2.flash-loans/config.js
+ create mode 100644 2.flash-loans/contracts/FlashLoanExample.sol
+ create mode 100644 2.flash-loans/contracts/Lock.sol
+ create mode 100644 2.flash-loans/hardhat.config.js
+ create mode 100644 2.flash-loans/package-lock.json
+ create mode 100644 2.flash-loans/package.json
+ create mode 100644 2.flash-loans/scripts/deploy.js
+ create mode 100644 2.flash-loans/terminal.commands
+ create mode 100644 2.flash-loans/test/FlashLoanExample.js
+ create mode 100644 2.flash-loans/test/Lock.js
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ 
