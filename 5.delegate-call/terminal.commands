@@ -1,0 +1,62 @@
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   4.private-data/terminal.commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   4.private-data/terminal.commands
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "private-data.terminal-commands"
+[trunk c515e7e] private-data.terminal-commands
+ 1 file changed, 187 insertions(+)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ mkdir 5
+gitpod /workspace/lw3.io-dao.snr (trunk) $ cd 5
+gitpod /workspace/lw3.io-dao.snr/5 (trunk) $ touch terminal.commands
+gitpod /workspace/lw3.io-dao.snr/5 (trunk) $ ll
+total 0
+drwxr-xr-x 2 gitpod gitpod  31 Apr  4 13:25 ./
+drwxr-xr-x 8 gitpod gitpod 130 Apr  4 13:25 ../
+-rw-r--r-- 1 gitpod gitpod   0 Apr  4 13:25 terminal.commands
+gitpod /workspace/lw3.io-dao.snr/5 (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr/5 (trunk) $ cd ,,
+bash: cd: ,,: No such file or directory
+gitpod /workspace/lw3.io-dao.snr/5 (trunk) $ cd ..
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        5/
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ clear
