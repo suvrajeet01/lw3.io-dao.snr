@@ -1,0 +1,99 @@
+gitpod /workspace/lw3.io-dao.snr (trunk) $ mkdir merkle-trees
+gitpod /workspace/lw3.io-dao.snr (trunk) $ mv merkle-trees 1.merkle-trees
+gitpod /workspace/lw3.io-dao.snr (trunk) $ ls
+1.merkle-trees  README.md
+gitpod /workspace/lw3.io-dao.snr (trunk) $ cd 
+1.merkle-trees/ .git/           
+gitpod /workspace/lw3.io-dao.snr (trunk) $ cd 1
+bash: cd: 1: No such file or directory
+gitpod /workspace/lw3.io-dao.snr (trunk) $ cd 1.merkle-trees/
+gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ ls -a
+.  ..
+gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ touch terminal.commands
+gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ npm init --yes
+Wrote to /workspace/lw3.io-dao.snr/1.merkle-trees/package.json:
+
+{
+  "name": "1.merkle-trees",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+npx hardhat⠂⠂⠂⠂⠂⠂⠂⠂) ⠸ idealTree:mocha: timing idealTree:node_modules/eth-gas-reporter/node_modules/mocha Completed in 78ms
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@2.0.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+
+added 705 packages, and audited 706 packages in 20s
+
+123 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 4 high, 3 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm notice 
+npm notice New minor version of npm available! 9.5.0 -> 9.6.3
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.6.3
+npm notice Run npm install -g npm@9.6.3 to update!
+npm notice 
+gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ npx hardhat
+888    888                      888 888               888
+888    888                      888 888               888
+888    888                      888 888               888
+8888888888  8888b.  888d888 .d88888 88888b.   8888b.  888888
+888    888     "88b 888P"  d88" 888 888 "88b     "88b 888
+888    888 .d888888 888    888  888 888  888 .d888888 888
+888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
+888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
+
+Welcome to Hardhat v2.13.0
+
+✔ What do you want to do? · Create a JavaScript project
+✔ Hardhat project root: · /workspace/lw3.io-dao.snr/1.merkle-trees
+✔ Do you want to add a .gitignore? (Y/n) · y
+✔ Help us improve Hardhat with anonymous crash reports & basic usage data? (Y/n) · n
+
+Project created
+
+See the README.md file for some example tasks you can run
+
+Give Hardhat a star on Github if you're enjoying it!
+
+     https://github.com/NomicFoundation/hardhat
+gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ npm install @openzeppelin/contracts keccak256 merkletreejs
+
+added 7 packages, and audited 713 packages in 2s
+
+123 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 4 high, 3 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ clear
+
+
+
