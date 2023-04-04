@@ -97,3 +97,102 @@ gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ clear
 
 
 
+gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ npx hardhat test
+Compiled 3 Solidity files successfully
+
+
+  Lock
+    Deployment
+      ✔ Should set the right unlockTime (1220ms)
+      ✔ Should set the right owner
+      ✔ Should receive and store the funds to lock
+      ✔ Should fail if the unlockTime is not in the future
+    Withdrawals
+      Validations
+        ✔ Should revert with the right error if called too soon
+        ✔ Should revert with the right error if called from another account
+        ✔ Shouldn't fail if the unlockTime has arrived and the owner calls it
+      Events
+        ✔ Should emit an event on withdrawals
+      Transfers
+        ✔ Should transfer the funds to the owner
+
+  Merkle Trees
+    ✔ Should be able to verify if address is in whitelist or not (129ms)
+
+
+  10 passing (2s)
+
+gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr/1.merkle-trees (trunk) $ cd ..
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.merkle-trees/
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   1.merkle-trees/.gitignore
+        new file:   1.merkle-trees/README.md
+        new file:   1.merkle-trees/contracts/Lock.sol
+        new file:   1.merkle-trees/contracts/Whitelist.sol
+        new file:   1.merkle-trees/hardhat.config.js
+        new file:   1.merkle-trees/package-lock.json
+        new file:   1.merkle-trees/package.json
+        new file:   1.merkle-trees/scripts/deploy.js
+        new file:   1.merkle-trees/terminal.commands
+        new file:   1.merkle-trees/test/Lock.js
+        new file:   1.merkle-trees/test/merkle-root.js
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "merkle-trees"
+[trunk 8ca5984] merkle-trees
+ 11 files changed, 9574 insertions(+)
+ create mode 100644 1.merkle-trees/.gitignore
+ create mode 100644 1.merkle-trees/README.md
+ create mode 100644 1.merkle-trees/contracts/Lock.sol
+ create mode 100644 1.merkle-trees/contracts/Whitelist.sol
+ create mode 100644 1.merkle-trees/hardhat.config.js
+ create mode 100644 1.merkle-trees/package-lock.json
+ create mode 100644 1.merkle-trees/package.json
+ create mode 100644 1.merkle-trees/scripts/deploy.js
+ create mode 100644 1.merkle-trees/terminal.commands
+ create mode 100644 1.merkle-trees/test/Lock.js
+ create mode 100644 1.merkle-trees/test/merkle-root.js
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git push
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (17/17), 86.19 KiB | 6.16 MiB/s, done.
+Total 17 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/suvrajeet01/lw3.io-dao.snr.git
+   60882fa..8ca5984  trunk -> trunk
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ 
