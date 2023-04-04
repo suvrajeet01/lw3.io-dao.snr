@@ -1,0 +1,187 @@
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   3.re-entrancy/terminal.commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   3.re-entrancy/terminal.commands
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "re-entrancy.terminal-commands"
+[trunk ec42d5d] re-entrancy.terminal-commands
+ 1 file changed, 93 insertions(+), 1 deletion(-)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ ls
+1.merkle-trees  2.flash-loans  3.re-entrancy  README.md
+gitpod /workspace/lw3.io-dao.snr (trunk) $ ll
+total 20
+drwxr-xr-x 6 gitpod gitpod   99 Apr  4 12:41 ./
+drwxr-xr-x 7 gitpod gitpod  100 Apr  4 12:09 ../
+drwxr-xr-x 8 gitpod gitpod 4096 Apr  4 07:59 1.merkle-trees/
+drwxr-xr-x 8 gitpod gitpod 4096 Apr  4 12:28 2.flash-loans/
+drwxr-xr-x 8 gitpod gitpod 4096 Apr  4 12:47 3.re-entrancy/
+drwxr-xr-x 8 gitpod gitpod 4096 Apr  4 12:50 .git/
+-rw-r--r-- 1 gitpod gitpod   43 Apr  3 17:36 README.md
+gitpod /workspace/lw3.io-dao.snr (trunk) $ mkdir 4.private-data
+gitpod /workspace/lw3.io-dao.snr (trunk) $ cd 4.private-data/
+gitpod /workspace/lw3.io-dao.snr/4.private-data (trunk) $ touch terminal.commands
+gitpod /workspace/lw3.io-dao.snr/4.private-data (trunk) $ ll
+total 0
+drwxr-xr-x 2 gitpod gitpod  31 Apr  4 12:58 ./
+drwxr-xr-x 7 gitpod gitpod 121 Apr  4 12:57 ../
+-rw-r--r-- 1 gitpod gitpod   0 Apr  4 12:58 terminal.commands
+gitpod /workspace/lw3.io-dao.snr/4.private-data (trunk) $ npm init --yes
+Wrote to /workspace/lw3.io-dao.snr/4.private-data/package.json:
+
+{
+  "name": "4.private-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+gitpod /workspace/lw3.io-dao.snr/4.private-data (trunk) $ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated uuid@2.0.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 705 packages, and audited 706 packages in 15s
+
+123 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 4 high, 3 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+gitpod /workspace/lw3.io-dao.snr/4.private-data (trunk) $ npx hardhat
+888    888                      888 888               888
+888    888                      888 888               888
+888    888                      888 888               888
+8888888888  8888b.  888d888 .d88888 88888b.   8888b.  888888
+888    888     "88b 888P"  d88" 888 888 "88b     "88b 888
+888    888 .d888888 888    888  888 888  888 .d888888 888
+888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
+888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
+
+Welcome to Hardhat v2.13.0
+
+✔ What do you want to do? · Create a JavaScript project
+✔ Hardhat project root: · /workspace/lw3.io-dao.snr/4.private-data
+✔ Do you want to add a .gitignore? (Y/n) · y
+
+Project created
+
+See the README.md file for some example tasks you can run
+
+Give Hardhat a star on Github if you're enjoying it!
+
+     https://github.com/NomicFoundation/hardhat
+gitpod /workspace/lw3.io-dao.snr/4.private-data (trunk) $ npx hardhat test
+Compiled 2 Solidity files successfully
+
+
+  Lock
+    Deployment
+      ✔ Should set the right unlockTime (1089ms)
+      ✔ Should set the right owner
+      ✔ Should receive and store the funds to lock
+      ✔ Should fail if the unlockTime is not in the future
+    Withdrawals
+      Validations
+        ✔ Should revert with the right error if called too soon
+        ✔ Should revert with the right error if called from another account
+        ✔ Shouldn't fail if the unlockTime has arrived and the owner calls it
+      Events
+        ✔ Should emit an event on withdrawals
+      Transfers
+        ✔ Should transfer the funds to the owner
+
+  Attack
+    ✔ Should be able to read the private variables password and username
+
+
+  10 passing (1s)
+
+gitpod /workspace/lw3.io-dao.snr/4.private-data (trunk) $ cd ..
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        4.private-data/
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   4.private-data/.gitignore
+        new file:   4.private-data/README.md
+        new file:   4.private-data/contracts/Lock.sol
+        new file:   4.private-data/contracts/Login.sol
+        new file:   4.private-data/hardhat.config.js
+        new file:   4.private-data/package-lock.json
+        new file:   4.private-data/package.json
+        new file:   4.private-data/scripts/deploy.js
+        new file:   4.private-data/terminal.commands
+        new file:   4.private-data/test/Lock.js
+        new file:   4.private-data/test/attack.js
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "private-data"
+[trunk 39ccd35] private-data
+ 11 files changed, 9430 insertions(+)
+ create mode 100644 4.private-data/.gitignore
+ create mode 100644 4.private-data/README.md
+ create mode 100644 4.private-data/contracts/Lock.sol
+ create mode 100644 4.private-data/contracts/Login.sol
+ create mode 100644 4.private-data/hardhat.config.js
+ create mode 100644 4.private-data/package-lock.json
+ create mode 100644 4.private-data/package.json
+ create mode 100644 4.private-data/scripts/deploy.js
+ create mode 100644 4.private-data/terminal.commands
+ create mode 100644 4.private-data/test/Lock.js
+ create mode 100644 4.private-data/test/attack.js
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ clear
