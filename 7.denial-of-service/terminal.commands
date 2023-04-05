@@ -165,4 +165,84 @@ See the README.md file for some example tasks you can run
 Give Hardhat a star on Github if you're enjoying it!
 
      https://github.com/NomicFoundation/hardhat
-gitpod /workspace/lw3.io-dao.snr/7.denial-of-service (trunk) $ 
+gitpod /workspace/lw3.io-dao.snr/7.denial-of-service (trunk) $ npx hardhat test
+Downloading compiler 0.8.18
+Compiled 3 Solidity files successfully
+
+
+  Lock
+    Deployment
+      ✔ Should set the right unlockTime (2090ms)
+      ✔ Should set the right owner
+      ✔ Should receive and store the funds to lock
+      ✔ Should fail if the unlockTime is not in the future (80ms)
+    Withdrawals
+      Validations
+        ✔ Should revert with the right error if called too soon (42ms)
+        ✔ Should revert with the right error if called from another account
+        ✔ Shouldn't fail if the unlockTime has arrived and the owner calls it (38ms)
+      Events
+        ✔ Should emit an event on withdrawals
+      Transfers
+        ✔ Should transfer the funds to the owner (40ms)
+
+  Denial of Service
+Good Contract's Address: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+Attack Contract's Address 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
+    ✔ After being declared the winner, Attack.sol should not allow anyone else to become the winner (196ms)
+
+
+  10 passing (3s)
+
+gitpod /workspace/lw3.io-dao.snr/7.denial-of-service (trunk) $ cd ..
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        7.denial-of-service/
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   7.denial-of-service/.gitignore
+        new file:   7.denial-of-service/README.md
+        new file:   7.denial-of-service/contracts/Attack.sol
+        new file:   7.denial-of-service/contracts/Good.sol
+        new file:   7.denial-of-service/contracts/Lock.sol
+        new file:   7.denial-of-service/hardhat.config.js
+        new file:   7.denial-of-service/package-lock.json
+        new file:   7.denial-of-service/package.json
+        new file:   7.denial-of-service/scripts/deploy.js
+        new file:   7.denial-of-service/terminal.commands
+        new file:   7.denial-of-service/test/Lock.js
+        new file:   7.denial-of-service/test/attack.js
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "denial-of-service"
+[trunk fdd4a3f] denial-of-service
+ 12 files changed, 9626 insertions(+)
+ create mode 100644 7.denial-of-service/.gitignore
+ create mode 100644 7.denial-of-service/README.md
+ create mode 100644 7.denial-of-service/contracts/Attack.sol
+ create mode 100644 7.denial-of-service/contracts/Good.sol
+ create mode 100644 7.denial-of-service/contracts/Lock.sol
+ create mode 100644 7.denial-of-service/hardhat.config.js
+ create mode 100644 7.denial-of-service/package-lock.json
+ create mode 100644 7.denial-of-service/package.json
+ create mode 100644 7.denial-of-service/scripts/deploy.js
+ create mode 100644 7.denial-of-service/terminal.commands
+ create mode 100644 7.denial-of-service/test/Lock.js
+ create mode 100644 7.denial-of-service/test/attack.js
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ 
