@@ -1,0 +1,221 @@
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   5.delegate-call/terminal.commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git push
+Enumerating objects: 67, done.
+Counting objects: 100% (67/67), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (64/64), done.
+Writing objects: 100% (66/66), 94.98 KiB | 5.59 MiB/s, done.
+Total 66 (delta 24), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (24/24), done.
+To https://github.com/suvrajeet01/lw3.io-dao.snr.git
+   5d23104..fe8bdb1  trunk -> trunk
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   5.delegate-call/terminal.commands
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "delegate-call.terminal-commands"
+[trunk 4c7ed95] delegate-call.terminal-commands
+ 1 file changed, 197 insertions(+)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+git pushworkspace/lw3.io-dao.snr (trunk) $ git
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.10 KiB | 3.10 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/suvrajeet01/lw3.io-dao.snr.git
+   fe8bdb1..4c7ed95  trunk -> trunk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ cd 6.randomness/
+gitpod /workspace/lw3.io-dao.snr/6.randomness (trunk) $ touch terminal.commands
+gitpod /workspace/lw3.io-dao.snr/6.randomness (trunk) $ ll
+total 0
+drwxr-xr-x 2 gitpod gitpod  31 Apr  5 13:14 ./
+drwxr-xr-x 9 gitpod gitpod 164 Apr  5 13:13 ../
+-rw-r--r-- 1 gitpod gitpod   0 Apr  5 13:14 terminal.commands
+gitpod /workspace/lw3.io-dao.snr/6.randomness (trunk) $ npm init --yes
+Wrote to /workspace/lw3.io-dao.snr/6.randomness/package.json:
+
+{
+  "name": "6.randomness",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+gitpod /workspace/lw3.io-dao.snr/6.randomness (trunk) $ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@2.0.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+
+added 705 packages, and audited 706 packages in 19s
+
+123 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 4 high, 3 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm notice 
+npm notice New minor version of npm available! 9.5.0 -> 9.6.3
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.6.3
+npm notice Run npm install -g npm@9.6.3 to update!
+npm notice 
+gitpod /workspace/lw3.io-dao.snr/6.randomness (trunk) $ npx hardhat
+888    888                      888 888               888
+888    888                      888 888               888
+888    888                      888 888               888
+8888888888  8888b.  888d888 .d88888 88888b.   8888b.  888888
+888    888     "88b 888P"  d88" 888 888 "88b     "88b 888
+888    888 .d888888 888    888  888 888  888 .d888888 888
+888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
+888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
+
+Welcome to Hardhat v2.13.0
+
+✔ What do you want to do? · Create a JavaScript project
+✔ Hardhat project root: · /workspace/lw3.io-dao.snr/6.randomness
+✔ Do you want to add a .gitignore? (Y/n) · y
+✔ Help us improve Hardhat with anonymous crash reports & basic usage data? (Y/n) · n
+
+Project created
+
+See the README.md file for some example tasks you can run
+
+Give Hardhat a star on Github if you're enjoying it!
+
+     https://github.com/NomicFoundation/hardhat
+gitpod /workspace/lw3.io-dao.snr/6.randomness (trunk) $ npx hardhat test
+Downloading compiler 0.8.18
+Compiled 3 Solidity files successfully
+
+
+  Lock
+    Deployment
+      ✔ Should set the right unlockTime (889ms)
+      ✔ Should set the right owner
+      ✔ Should receive and store the funds to lock
+      ✔ Should fail if the unlockTime is not in the future
+    Withdrawals
+      Validations
+        ✔ Should revert with the right error if called too soon
+        ✔ Should revert with the right error if called from another account
+        ✔ Shouldn't fail if the unlockTime has arrived and the owner calls it
+      Events
+        ✔ Should emit an event on withdrawals
+      Transfers
+        ✔ Should transfer the funds to the owner
+
+  Attack
+Game contract address 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+Attack contract address 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
+    ✔ Should be able to guess the exact number (80ms)
+
+
+  10 passing (1s)
+
+gitpod /workspace/lw3.io-dao.snr/6.randomness (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr/6.randomness (trunk) $ cd ..
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        6.randomness/
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ clear
