@@ -1,0 +1,99 @@
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   7.denial-of-service/terminal.commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "denial-of-service.terminal-commands"
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   7.denial-of-service/terminal.commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   7.denial-of-service/terminal.commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   7.denial-of-service/terminal.commands
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "denial-of-service.terminal-commands"
+[trunk 3350e9a] denial-of-service.terminal-commands
+ 1 file changed, 32 insertions(+), 1 deletion(-)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git push
+Enumerating objects: 27, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (26/26), 86.36 KiB | 5.40 MiB/s, done.
+Total 26 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 1 local object.
+To https://github.com/suvrajeet01/lw3.io-dao.snr.git
+   368e6fe..3350e9a  trunk -> trunk
+gitpod /workspace/lw3.io-dao.snr (trunk) $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
