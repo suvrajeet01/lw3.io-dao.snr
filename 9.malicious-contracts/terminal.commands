@@ -97,3 +97,163 @@ gitpod /workspace/lw3.io-dao.snr (trunk) $ clear
 
 
 
+gitpod /workspace/lw3.io-dao.snr (trunk) $ ll
+total 44
+drwxr-xr-x 11 gitpod gitpod 4096 Apr  6 14:52 ./
+drwxr-xr-x  7 gitpod gitpod  100 Apr  6 14:44 ../
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  4 07:59 1.merkle-trees/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  4 12:28 2.flash-loans/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  4 12:47 3.re-entrancy/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  4 13:03 4.private-data/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  4 13:39 5.delegate-call/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  5 13:23 6.randomness/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  5 14:26 7.denial-of-service/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  6 14:57 8.tx-origin/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  6 14:59 .git/
+-rw-r--r--  1 gitpod gitpod   43 Apr  3 17:36 README.md
+gitpod /workspace/lw3.io-dao.snr (trunk) $ mkdir 9.malicious-contracts
+gitpod /workspace/lw3.io-dao.snr (trunk) $ cd 9.malicious-contracts/
+gitpod /workspace/lw3.io-dao.snr/9.malicious-contracts (trunk) $ touch terminal.commands
+gitpod /workspace/lw3.io-dao.snr/9.malicious-contracts (trunk) $ npm init --yes
+Wrote to /workspace/lw3.io-dao.snr/9.malicious-contracts/package.json:
+
+{
+  "name": "9.malicious-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+gitpod /workspace/lw3.io-dao.snr/9.malicious-contracts (trunk) $ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+npx hardhat⠂⠂⠂⠂⠂⠂⠂⠂) ⠙ idealTree:9.malicious-contracts: sill idealTree buildDeps
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated uuid@2.0.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 705 packages, and audited 706 packages in 16s
+
+123 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 4 high, 3 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+gitpod /workspace/lw3.io-dao.snr/9.malicious-contracts (trunk) $ npx hardhat
+888    888                      888 888               888
+888    888                      888 888               888
+888    888                      888 888               888
+8888888888  8888b.  888d888 .d88888 88888b.   8888b.  888888
+888    888     "88b 888P"  d88" 888 888 "88b     "88b 888
+888    888 .d888888 888    888  888 888  888 .d888888 888
+888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
+888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
+
+Welcome to Hardhat v2.13.0
+
+✔ What do you want to do? · Create a JavaScript project
+✔ Hardhat project root: · /workspace/lw3.io-dao.snr/9.malicious-contracts
+✔ Do you want to add a .gitignore? (Y/n) · y
+
+Project created
+
+See the README.md file for some example tasks you can run
+
+Give Hardhat a star on Github if you're enjoying it!
+
+     https://github.com/NomicFoundation/hardhat
+gitpod /workspace/lw3.io-dao.snr/9.malicious-contracts (trunk) $ npx hardhat test
+Compiled 4 Solidity files successfully
+
+
+  Lock
+    Deployment
+      ✔ Should set the right unlockTime (1081ms)
+      ✔ Should set the right owner
+      ✔ Should receive and store the funds to lock
+      ✔ Should fail if the unlockTime is not in the future
+    Withdrawals
+      Validations
+        ✔ Should revert with the right error if called too soon
+        ✔ Should revert with the right error if called from another account
+        ✔ Shouldn't fail if the unlockTime has arrived and the owner calls it
+      Events
+        ✔ Should emit an event on withdrawals
+      Transfers
+        ✔ Should transfer the funds to the owner
+
+  Malicious External Contract
+Malicious Contract's Address 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+Good Contract's Address: 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
+    ✔ Should change the owner of the Good contract (84ms)
+
+
+  10 passing (1s)
+
+gitpod /workspace/lw3.io-dao.snr/9.malicious-contracts (trunk) $ cd ..
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        9.malicious-contracts/
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   9.malicious-contracts/.gitignore
+        new file:   9.malicious-contracts/README.md
+        new file:   9.malicious-contracts/contracts/Good.sol
+        new file:   9.malicious-contracts/contracts/Helper.sol
+        new file:   9.malicious-contracts/contracts/Lock.sol
+        new file:   9.malicious-contracts/contracts/Malicious.sol
+        new file:   9.malicious-contracts/hardhat.config.js
+        new file:   9.malicious-contracts/package-lock.json
+        new file:   9.malicious-contracts/package.json
+        new file:   9.malicious-contracts/scripts/deploy.js
+        new file:   9.malicious-contracts/terminal.commands
+        new file:   9.malicious-contracts/test/Lock.js
+        new file:   9.malicious-contracts/test/attack.js
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "malicious-contracts"
+[trunk ee36b17] malicious-contracts
+ 13 files changed, 9568 insertions(+)
+ create mode 100644 9.malicious-contracts/.gitignore
+ create mode 100644 9.malicious-contracts/README.md
+ create mode 100644 9.malicious-contracts/contracts/Good.sol
+ create mode 100644 9.malicious-contracts/contracts/Helper.sol
+ create mode 100644 9.malicious-contracts/contracts/Lock.sol
+ create mode 100644 9.malicious-contracts/contracts/Malicious.sol
+ create mode 100644 9.malicious-contracts/hardhat.config.js
+ create mode 100644 9.malicious-contracts/package-lock.json
+ create mode 100644 9.malicious-contracts/package.json
+ create mode 100644 9.malicious-contracts/scripts/deploy.js
+ create mode 100644 9.malicious-contracts/terminal.commands
+ create mode 100644 9.malicious-contracts/test/Lock.js
+ create mode 100644 9.malicious-contracts/test/attack.js
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ clear
