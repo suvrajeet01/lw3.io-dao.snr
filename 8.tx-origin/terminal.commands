@@ -97,3 +97,153 @@ gitpod /workspace/lw3.io-dao.snr (trunk) $
 
 
 
+gitpod /workspace/lw3.io-dao.snr (trunk) $ mkdir 8.tx-origin
+gitpod /workspace/lw3.io-dao.snr (trunk) $ cd 8.tx-origin/
+gitpod /workspace/lw3.io-dao.snr/8.tx-origin (trunk) $ touch terminal.commands
+gitpod /workspace/lw3.io-dao.snr/8.tx-origin (trunk) $ npm init --yes
+Wrote to /workspace/lw3.io-dao.snr/8.tx-origin/package.json:
+
+{
+  "name": "8.tx-origin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+gitpod /workspace/lw3.io-dao.snr/8.tx-origin (trunk) $ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@2.0.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+
+added 705 packages, and audited 706 packages in 18s
+
+123 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 4 high, 3 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm notice 
+npm notice New minor version of npm available! 9.5.0 -> 9.6.4
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.6.4
+npm notice Run npm install -g npm@9.6.4 to update!
+npm notice 
+gitpod /workspace/lw3.io-dao.snr/8.tx-origin (trunk) $ npx hardhat
+888    888                      888 888               888
+888    888                      888 888               888
+888    888                      888 888               888
+8888888888  8888b.  888d888 .d88888 88888b.   8888b.  888888
+888    888     "88b 888P"  d88" 888 888 "88b     "88b 888
+888    888 .d888888 888    888  888 888  888 .d888888 888
+888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
+888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
+
+Welcome to Hardhat v2.13.0
+
+✔ What do you want to do? · Create a JavaScript project
+✔ Hardhat project root: · /workspace/lw3.io-dao.snr/8.tx-origin
+✔ Do you want to add a .gitignore? (Y/n) · y
+✔ Help us improve Hardhat with anonymous crash reports & basic usage data? (Y/n) · n
+
+Project created
+
+See the README.md file for some example tasks you can run
+
+Give Hardhat a star on Github if you're enjoying it!
+
+     https://github.com/NomicFoundation/hardhat
+gitpod /workspace/lw3.io-dao.snr/8.tx-origin (trunk) $ npx hardhat test
+Downloading compiler 0.8.18
+Compiled 3 Solidity files successfully
+
+
+  Lock
+    Deployment
+      ✔ Should set the right unlockTime (1072ms)
+      ✔ Should set the right owner
+      ✔ Should receive and store the funds to lock
+      ✔ Should fail if the unlockTime is not in the future
+    Withdrawals
+      Validations
+        ✔ Should revert with the right error if called too soon
+        ✔ Should revert with the right error if called from another account
+        ✔ Shouldn't fail if the unlockTime has arrived and the owner calls it
+      Events
+        ✔ Should emit an event on withdrawals
+      Transfers
+        ✔ Should transfer the funds to the owner
+
+  tx.origin
+Good Contract's Address: 0x8464135c8F25Da09e49BC8782676a84730C318bC
+Attack Contract's Address 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+    ✔ Attack.sol will be able to change the owner of Good.sol (86ms)
+
+
+  10 passing (1s)
+
+gitpod /workspace/lw3.io-dao.snr/8.tx-origin (trunk) $ cd ..
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        8.tx-origin/
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   8.tx-origin/.gitignore
+        new file:   8.tx-origin/README.md
+        new file:   8.tx-origin/contracts/Attack.sol
+        new file:   8.tx-origin/contracts/Good.sol
+        new file:   8.tx-origin/contracts/Lock.sol
+        new file:   8.tx-origin/hardhat.config.js
+        new file:   8.tx-origin/package-lock.json
+        new file:   8.tx-origin/package.json
+        new file:   8.tx-origin/scripts/deploy.js
+        new file:   8.tx-origin/terminal.commands
+        new file:   8.tx-origin/test/Lock.js
+        new file:   8.tx-origin/test/attack.js
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "tx-origin"
+[trunk 8cd6f3d] tx-origin
+ 12 files changed, 9536 insertions(+)
+ create mode 100644 8.tx-origin/.gitignore
+ create mode 100644 8.tx-origin/README.md
+ create mode 100644 8.tx-origin/contracts/Attack.sol
+ create mode 100644 8.tx-origin/contracts/Good.sol
+ create mode 100644 8.tx-origin/contracts/Lock.sol
+ create mode 100644 8.tx-origin/hardhat.config.js
+ create mode 100644 8.tx-origin/package-lock.json
+ create mode 100644 8.tx-origin/package.json
+ create mode 100644 8.tx-origin/scripts/deploy.js
+ create mode 100644 8.tx-origin/terminal.commands
+ create mode 100644 8.tx-origin/test/Lock.js
+ create mode 100644 8.tx-origin/test/attack.js
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ clear
