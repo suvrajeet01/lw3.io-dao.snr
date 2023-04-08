@@ -746,3 +746,38 @@ Your branch is ahead of 'origin/trunk' by 1 commit.
 
 nothing to commit, working tree clean
 gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ clear
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal.commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   terminal.commands
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git commit -m "meta-transactions.terminal-commands"
+[trunk dbf7ac9] meta-transactions.terminal-commands
+ 1 file changed, 73 insertions(+), 1 deletion(-)
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ clear
+
+
+
