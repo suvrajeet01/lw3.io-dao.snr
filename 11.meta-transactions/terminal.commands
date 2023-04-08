@@ -781,3 +781,89 @@ gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ clear
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ npx hardhat test
+Compiled 1 Solidity file successfully
+
+
+  Lock
+    Deployment
+      ✔ Should set the right unlockTime (963ms)
+      ✔ Should set the right owner
+      ✔ Should receive and store the funds to lock
+      ✔ Should fail if the unlockTime is not in the future
+    Withdrawals
+      Validations
+        ✔ Should revert with the right error if called too soon
+        ✔ Should revert with the right error if called from another account
+        ✔ Shouldn't fail if the unlockTime has arrived and the owner calls it
+      Events
+        ✔ Should emit an event on withdrawals
+      Transfers
+        ✔ Should transfer the funds to the owner
+
+  MetaTokenTransfer
+    ✔ Should let user transfer tokens through a relayer with different nonces (211ms)
+    ✔ Should not let signature replay happen (110ms)
+
+
+  11 passing (1s)
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contracts/MetaTokenSender.sol
+        modified:   terminal.commands
+        modified:   test/metatxn-test.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git commit terminal.commands -m "meta-transactions.terminal-commands"
+[trunk f63bb17] meta-transactions.terminal-commands
+ 1 file changed, 35 insertions(+)
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   contracts/MetaTokenSender.sol
+        modified:   test/metatxn-test.js
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git commit -m "updated files[contract+test]"
+[trunk ce3a2c1] updated files[contract+test]
+ 2 files changed, 135 insertions(+), 44 deletions(-)
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ clear
+
+
+
+
+
+
