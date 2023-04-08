@@ -867,3 +867,44 @@ gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ clear
 
 
 
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal.commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   terminal.commands
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git commit terminal.commands -m "meta-transactions.terminal-commands"
+[trunk 987a9ce] meta-transactions.terminal-commands
+ 1 file changed, 86 insertions(+)
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git push
+Enumerating objects: 37, done.
+Counting objects: 100% (37/37), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (35/35), done.
+Writing objects: 100% (36/36), 89.97 KiB | 6.92 MiB/s, done.
+Total 36 (delta 14), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (14/14), completed with 1 local object.
+To https://github.com/suvrajeet01/lw3.io-dao.snr.git
+   945a6d3..987a9ce  trunk -> trunk
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ clear
