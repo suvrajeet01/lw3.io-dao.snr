@@ -1,0 +1,676 @@
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   10.upgradeable-contracts/terminal-commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   10.upgradeable-contracts/terminal-commands
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "upgradeable-contracts.terminal-commands"
+[trunk 945a6d3] upgradeable-contracts.terminal-commands
+ 1 file changed, 263 insertions(+)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ gti status
+bash: gti: command not found
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git push
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (22/22), 87.66 KiB | 6.74 MiB/s, done.
+Total 22 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+leTo https://github.com/suvrajeet01/lw3.io-dao.snr.git
+   8fb7128..945a6d3  trunk -> trunk
+gitpod /workspace/lw3.io-dao.snr (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+github codespaces :-
+
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr (trunk) $ ll
+total 56
+drwxrwxrwx+ 13 codespace root 4096 Apr  8 16:26 ./
+drwxr-xrwx+  5 codespace root 4096 Apr  8 16:26 ../
+drwxrwxrwx+  8 codespace root 4096 Apr  8 16:26 .git/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 1.merkle-trees/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 10.upgradeable-contracts/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 2.flash-loans/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 3.re-entrancy/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 4.private-data/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 5.delegate-call/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 6.randomness/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 7.denial-of-service/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 8.tx-origin/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 9.malicious-contracts/
+-rw-rw-rw-   1 codespace root   43 Apr  8 16:26 README.md
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr (trunk) $ mkdir meta-transactions
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr (trunk) $ mv meta-transactions 11.meta-transactions
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr (trunk) $ cd 11.meta-transactions/
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ touch terminal.commands
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ ll
+total 8
+drwxrwxrwx+  2 codespace codespace 4096 Apr  8 16:32 ./
+drwxrwxrwx+ 14 codespace root      4096 Apr  8 16:32 ../
+-rw-rw-rw-   1 codespace codespace    0 Apr  8 16:32 terminal.commands
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ npm init --yes
+
+Wrote to /workspaces/lw3.io-dao.snr/11.meta-transactions/package.json:
+
+{
+  "name": "11.meta-transactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ 
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated uuid@2.0.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+
+added 705 packages, and audited 706 packages in 2m
+
+123 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 4 high, 3 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm notice 
+npm notice New minor version of npm available! 9.5.0 -> 9.6.4
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.6.4
+npm notice Run npm install -g npm@9.6.4 to update!
+npm notice 
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ 
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   10.upgradeable-contracts/terminal-commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   10.upgradeable-contracts/terminal-commands
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git commit -m "upgradeable-contracts.terminal-commands"
+[trunk 945a6d3] upgradeable-contracts.terminal-commands
+ 1 file changed, 263 insertions(+)
+gitpod /workspace/lw3.io-dao.snr (trunk) $ gti status
+bash: gti: command not found
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git push
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (22/22), 87.66 KiB | 6.74 MiB/s, done.
+Total 22 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+leTo https://github.com/suvrajeet01/lw3.io-dao.snr.git
+   8fb7128..945a6d3  trunk -> trunk
+gitpod /workspace/lw3.io-dao.snr (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr (trunk) $ ll
+total 56
+drwxrwxrwx+ 13 codespace root 4096 Apr  8 16:26 ./
+drwxr-xrwx+  5 codespace root 4096 Apr  8 16:26 ../
+drwxrwxrwx+  8 codespace root 4096 Apr  8 16:26 .git/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 1.merkle-trees/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 10.upgradeable-contracts/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 2.flash-loans/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 3.re-entrancy/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 4.private-data/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 5.delegate-call/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 6.randomness/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 7.denial-of-service/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 8.tx-origin/
+drwxrwxrwx+  5 codespace root 4096 Apr  8 16:26 9.malicious-contracts/
+-rw-rw-rw-   1 codespace root   43 Apr  8 16:26 README.md
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr (trunk) $ mkdir meta-transactions
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr (trunk) $ mv meta-transactions 11.meta-transactions
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr (trunk) $ cd 11.meta-transactions/
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ touch terminal.commands
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ ll
+total 8
+drwxrwxrwx+  2 codespace codespace 4096 Apr  8 16:32 ./
+drwxrwxrwx+ 14 codespace root      4096 Apr  8 16:32 ../
+-rw-rw-rw-   1 codespace codespace    0 Apr  8 16:32 terminal.commands
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ npm init --yes
+
+Wrote to /workspaces/lw3.io-dao.snr/11.meta-transactions/package.json:
+
+{
+  "name": "11.meta-transactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ 
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated uuid@2.0.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+
+added 705 packages, and audited 706 packages in 2m
+
+123 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 4 high, 3 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm notice 
+npm notice New minor version of npm available! 9.5.0 -> 9.6.4
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.6.4
+npm notice Run npm install -g npm@9.6.4 to update!
+npm notice 
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr/11.meta-transactions (trunk) $ 
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.snr (trunk) $ ll
+total 52
+drwxr-xr-x 13 gitpod gitpod 4096 Apr  6 15:18 ./
+drwxr-xr-x  8 gitpod gitpod  122 Apr  8 16:37 ../
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  6 15:30 10.upgradeable-contracts/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  4 07:59 1.merkle-trees/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  4 12:28 2.flash-loans/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  4 12:47 3.re-entrancy/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  4 13:03 4.private-data/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  4 13:39 5.delegate-call/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  5 13:23 6.randomness/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  5 14:26 7.denial-of-service/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  6 14:57 8.tx-origin/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  6 15:12 9.malicious-contracts/
+drwxr-xr-x  8 gitpod gitpod 4096 Apr  6 15:33 .git/
+-rw-r--r--  1 gitpod gitpod   43 Apr  3 17:36 README.md
+gitpod /workspace/lw3.io-dao.snr (trunk) $ mkdir 11.meta-transactions
+gitpod /workspace/lw3.io-dao.snr (trunk) $ cd 11.meta-transactions/
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ touch terminal.commands
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ ll
+total 4
+drwxr-xr-x  2 gitpod gitpod   31 Apr  8 16:38 ./
+drwxr-xr-x 14 gitpod gitpod 4096 Apr  8 16:38 ../
+-rw-r--r--  1 gitpod gitpod    0 Apr  8 16:38 terminal.commands
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ npm init --yes
+Wrote to /workspace/lw3.io-dao.snr/11.meta-transactions/package.json:
+
+{
+  "name": "11.meta-transactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@2.0.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+
+added 705 packages, and audited 706 packages in 19s
+
+123 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 4 high, 3 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm notice 
+npm notice New minor version of npm available! 9.5.0 -> 9.6.4
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.6.4
+npm notice Run npm install -g npm@9.6.4 to update!
+npm notice 
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ npx hardhat
+888    888                      888 888               888
+888    888                      888 888               888
+888    888                      888 888               888
+8888888888  8888b.  888d888 .d88888 88888b.   8888b.  888888
+888    888     "88b 888P"  d88" 888 888 "88b     "88b 888
+888    888 .d888888 888    888  888 888  888 .d888888 888
+888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
+888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
+
+Welcome to Hardhat v2.13.0
+
+✔ What do you want to do? · Create a JavaScript project
+✔ Hardhat project root: · /workspace/lw3.io-dao.snr/11.meta-transactions
+✔ Do you want to add a .gitignore? (Y/n) · y
+✔ Help us improve Hardhat with anonymous crash reports & basic usage data? (Y/n) · n
+
+Project created
+
+See the README.md file for some example tasks you can run
+
+Give Hardhat a star on Github if you're enjoying it!
+
+     https://github.com/NomicFoundation/hardhat
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ npm install @openzeppelin/contracts
+
+added 1 package, and audited 707 packages in 1s
+
+123 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (4 moderate, 4 high, 3 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ npx hardhat test
+Downloading compiler 0.8.18
+Compiled 9 Solidity files successfully
+
+
+  Lock
+    Deployment
+      ✔ Should set the right unlockTime (924ms)
+      ✔ Should set the right owner
+      ✔ Should receive and store the funds to lock
+      ✔ Should fail if the unlockTime is not in the future
+    Withdrawals
+      Validations
+        ✔ Should revert with the right error if called too soon
+        ✔ Should revert with the right error if called from another account
+        ✔ Shouldn't fail if the unlockTime has arrived and the owner calls it
+      Events
+        ✔ Should emit an event on withdrawals
+      Transfers
+        ✔ Should transfer the funds to the owner
+
+  MetaTokenTransfer
+    ✔ Should let user transfer tokens through a relayer (163ms)
+
+
+  10 passing (1s)
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ npx hardhat test
+ParserError: Multiple SPDX license identifiers found in source file. Use "AND" or "OR" to combine multiple licenses. Please see https://spdx.org for more information.
+--> contracts/MetaTokenSender.sol
+
+
+Error HH600: Compilation failed
+
+HardhatError: HH600: Compilation failed
+    at SimpleTaskDefinition.action (/workspace/lw3.io-dao.snr/11.meta-transactions/node_modules/hardhat/src/builtin-tasks/compile.ts:473:15)
+    at Environment._runTaskDefinition (/workspace/lw3.io-dao.snr/11.meta-transactions/node_modules/hardhat/src/internal/core/runtime-environment.ts:330:14)
+    at OverriddenTaskDefinition._action (/workspace/lw3.io-dao.snr/11.meta-transactions/node_modules/@typechain/hardhat/src/index.ts:28:30)
+    at Environment._runTaskDefinition (/workspace/lw3.io-dao.snr/11.meta-transactions/node_modules/hardhat/src/internal/core/runtime-environment.ts:330:14)
+    at Environment.run (/workspace/lw3.io-dao.snr/11.meta-transactions/node_modules/hardhat/src/internal/core/runtime-environment.ts:163:14)
+    at SimpleTaskDefinition.action (/workspace/lw3.io-dao.snr/11.meta-transactions/node_modules/hardhat/src/builtin-tasks/compile.ts:1352:63)
+    at Environment._runTaskDefinition (/workspace/lw3.io-dao.snr/11.meta-transactions/node_modules/hardhat/src/internal/core/runtime-environment.ts:330:14)
+    at Environment.run (/workspace/lw3.io-dao.snr/11.meta-transactions/node_modules/hardhat/src/internal/core/runtime-environment.ts:163:14)
+    at SimpleTaskDefinition.action (/workspace/lw3.io-dao.snr/11.meta-transactions/node_modules/hardhat/src/builtin-tasks/compile.ts:1432:7)
+    at Environment._runTaskDefinition (/workspace/lw3.io-dao.snr/11.meta-transactions/node_modules/hardhat/src/internal/core/runtime-environment.ts:330:14)
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ npx hardhat test
+
+
+  Lock
+    Deployment
+      ✔ Should set the right unlockTime (906ms)
+      ✔ Should set the right owner
+      ✔ Should receive and store the funds to lock
+      ✔ Should fail if the unlockTime is not in the future
+    Withdrawals
+      Validations
+        ✔ Should revert with the right error if called too soon
+        ✔ Should revert with the right error if called from another account
+        ✔ Shouldn't fail if the unlockTime has arrived and the owner calls it
+      Events
+        ✔ Should emit an event on withdrawals
+      Transfers
+        ✔ Should transfer the funds to the owner
+
+  MetaTokenTransfer
+    ✔ Should let user transfer tokens through a relayer (154ms)
+
+
+  10 passing (1s)
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ clear
