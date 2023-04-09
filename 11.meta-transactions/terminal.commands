@@ -908,3 +908,196 @@ remote: Resolving deltas: 100% (14/14), completed with 1 local object.
 To https://github.com/suvrajeet01/lw3.io-dao.snr.git
    945a6d3..987a9ce  trunk -> trunk
 gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+github codespaces
+
+
+
+👋 Welcome to Codespaces! You are on our default image. 
+   - It includes runtimes and tools for Python, Node.js, Docker, and more. See the full list here: https://aka.ms/ghcs-default-image
+   - Want to use a custom image instead? Learn more here: https://aka.ms/configure-codespace
+
+🔍 To explore VS Code to its fullest, search using the Command Palette (Cmd/Ctrl + Shift + P or F1).
+
+📝 Edit away, run your app as usual, and we'll automatically make it available for you to access.
+
+@suvrajeet01 ➜ /workspaces/lw3.io-dao.snr (trunk) $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal.commands
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git commit -m "meta-transactions.terminal-commands"
+[trunk b7eb5c4] meta-transactions.terminal-commands
+ 1 file changed, 41 insertions(+)
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 575 bytes | 575.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/suvrajeet01/lw3.io-dao.snr.git
+   987a9ce..b7eb5c4  trunk -> trunk
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ clear
+
+
+
+
+gitpod /workspace/lw3.io-dao.snr/11.meta-transactions (trunk) $ cd ..
+gitpod /workspace/lw3.io-dao.snr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.snr (trunk) $ exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
